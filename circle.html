@@ -1,0 +1,484 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Circle</title>
+    <link rel="stylesheet" href="circle.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+      <header class="header">
+        
+          <!-- side navbar  -->
+          <div id="mySidenav" class="header__sidenav">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"
+              >&times;</a
+            >
+            <a href="#" onclick="closeNav()">Feature</a>
+            <a href="#" onclick="closeNav()">Feature</a>
+            <a href="#" onclick="closeNav()">Pricing</a>
+            <a href="#" onclick="closeNav()">Testimonials</a>
+            <a href="#" onclick="closeNav()">Company</a>
+            <a href="#" onclick="closeNav()">Contact</a>
+          </div>
+
+        <div class="header__navigation">  <span onclick="openNav()" class="header__menu">&#9776;</span></div>
+          <!-- navbar  -->
+           <!-- left navigation -->
+        <nav class="header__container full_container">
+          <div class="header__nav header__nav--left">
+            <a href="#" class="header__link">Feature</a>
+            <a href="#" class="header__link">Pricing</a>
+            <a href="#" class="header__link">Testimonials</a>
+          </div>
+          <!-- logo navigation -->
+          <div class="header__logo">
+            <img
+              src="image/logo.svg"
+              alt="logo_image"
+              
+              class="header__logo--icon"
+            />
+            <img
+              src="image/circle.svg"
+              alt="logo_title"
+      
+              class="header__logo--title"
+            />
+          </div>
+          <!-- right navigation -->
+          <div class="header__nav header__nav--right">
+            <a href="#" class="header__link">Company</a>
+            <a href="#" class="header__link">Contact</a>
+
+            <button class="header__btn">Login</button>
+          
+        </div>
+      </nav>
+      </header>
+    <main>
+      <section class="hero">
+        <div class="hero__container full_container">
+          <!-- hero contant -->
+          <div class="hero__content">
+            <!-- hero title -->
+            <h1 class="hero__title">
+              A powerful online engagement tool
+              that’s intuitive and simple to use.
+            </h1>
+
+            <p class="hero__description text-sm">
+              With stellar one-click reports and unmatched support, see how
+              
+              Circle will make a difference in your business.
+            </p>
+
+            
+              <button class="btn btn--primary hero__btn">Get started free <img src="image/right-arrow.svg" alt="right-arrow" class="right--arrow"></button>
+            
+          </div>
+          <!-- hero image -->
+          <div class="hero__image">
+            <img src="image/Mask-group.png" alt="group-photo" />
+          </div>
+        </div>
+      </section>
+    
+      <!-- section customer -->
+      <section class="customer__container">
+        
+          <!-- customer header -->
+          <div class="customer__header">
+            <span class="badge customer__badge">Our Customers</span>
+            <h2 class="customer__title text-xl">
+              Trusted by <strong>100,000+ customers</strong> in 90+ countries
+            </h2>
+          </div>
+          <!-- customer logos -->
+          <div class="customer__logos">
+            <img src="image/capgemini.svg" alt="capgemini_logo" class="customer__logo" />
+            <img src="image/yamaha.svg" alt="yamaha_logo" class="customer__logo" />
+            <img src="image/biacon.svg" alt="biacon_logo" class="customer__logo" />
+            <img src="image/dell.svg" alt="dell_logo" class="customer__logo" />
+            <img src="image/ck-birla.svg" alt="birla_logo" class="customer__logo" />
+            <img src="image/shell.svg" alt="shell_logo" class="customer__logo" />
+          </div>
+          <!-- customer record -->
+          <div class="customer__record">
+            <p class="text-sm">
+              &#10004;18281 <span>signed up last month</span>
+            </p>
+            <p class="text-sm">&#10004;GDPR- & CCPA <span>-ready</span></p>
+            <p class="text-sm">&#10004; Leader@G2 <span>Summer</span></p>
+          </div>
+      </section>
+      <hr class="horizonatal--braek">
+       <!-- section promise -->
+      <section class="container promise__container ">
+      
+          <!-- promise header -->
+          <div class="promise__content">
+            <span class="badge promise__badge">OUR PROMISE</span>
+            <h2 class="promise__title text-xl">
+              Tool <strong>built for people.</strong>
+            </h2>
+            <!-- div wrap remain -->
+            <p class="promise__text text-md">
+              Whether you want to edit your Google Docs, resolve Jira issues, or
+              collaborate over Zoom.
+            </p>
+            <p class="promise__text text-md">
+              Circle has 100+ integrations with tools you already use and love.
+            </p>
+          
+              <button class="btn btn--primary promise__btn">Get start free</button>
+           
+          </div>
+           <!-- promis image -->
+          <div class="promise__image">
+            <img
+              src="image/promis-image.png"
+              alt="promis-image"
+              class="promise__image--img"
+            />
+          </div>
+       
+        
+      </section>
+     <hr class="horizonatal--braek">
+      <!-- section awards -->
+      <section class="container award__container">
+       
+          <!-- award header -->
+          <div class="award__header">
+            <span class="badge award__badge">AWARDS</span>
+            <h2 class="award__title text-xl">
+              An <strong>award winning</strong> platform,
+              <strong>loved by customers.</strong>
+            </h2>
+          </div>
+          <!-- award lists -->
+          <div class="award__list">
+            <div class="award__item award__item--1">
+              <img src="image/award-1.svg" alt="award1" />
+              <h4 class="text-md">Market leader across 18 categories</h4>
+            </div>
+            <div class="award__item award__item--2">
+              <img src="image/award-2.svg" alt="award2" />
+              <h4 class="text-md">Most loved SaaS tool in 2021</h4>
+            </div>
+            <div class="award__item award__item--3">
+              <img src="image/award-3.svg" alt="award3" />
+              <h4 class="text-md">Category leader in 2022</h4>
+            </div>
+            <div class="award__item award__item--4">
+              <img src="image/award-4.svg" alt="award4" />
+              <h4 class="text-md">Most recommended tool in 2021</h4>
+            </div>
+            <div class="award__item award__item--5">
+              <img src="image/award-5.svg" alt="award5" />
+              <h4 class="text-md">Champion in survey tool 2022</h4>
+            </div>
+            <div class="award__item award__item--6">
+              <img src="image/award-6.svg" alt="award6" />
+              <h4 class="text-md">Top performer spring 2021</h4>
+            </div>
+          </div>
+        
+        <!-- horizontal break -->
+       
+      </section>
+      <hr class="horizonatal--braek">
+      <!-- development section -->
+      <section class="development">
+        <!-- devlopment header -->
+        <div class="development__header">
+          <span class="badge">built for people</span>
+          <h2 class="development__header--title text-xl">
+            <strong>Easy</strong> for beginners <strong>Powerful</strong>
+            for experts.
+          </h2>
+        </div>
+        <!-- devlopment tabs -->
+        <div class="container">
+          <div class="development__tabs">
+            <div class="development__tab development__tab--active">
+              <img src="image/dev-logo1.svg" alt="Create" />
+              <span class="text-md">Create</span>
+            </div>
+            <div class="development__tab">
+              <img src="image/dev-logo2.svg" alt="Distribute" />
+              <span class="text-md">Distribute</span>
+            </div>
+            <div class="development__tab">
+              <img src="image/dev-logo3.svg" alt="Collect" />
+              <span class="text-md">Collect</span>
+            </div>
+            <div class="development__tab">
+              <img src="image/dev-logo4.svg" alt="Analyze" />
+              <span class="text-md">Analyze</span>
+            </div>
+          </div>
+        </div>
+        <!-- devlopment tabs data -->
+        <div class="development__container full_container">
+          <div class="development__content container">
+            <div class="development__details">
+              <h2 class="text-xl development__title">Create</h2>
+              <h3 class="subtitle_text development__subtitle">
+                Advanced research software
+              </h3>
+              <p class="text-md development__text">
+                Ask the right questions and get the answers you need with the
+                most secure and collaborative survey platform on the market
+                featuring powerful logic, sophisticated analytics, and built-in
+                automation and integration.
+              </p>
+               
+                <button class=" btn btn--primary development__btn">Get start for free</button>
+             
+            </div>
+            <div class="development__image">
+              <img src="image/dev-image.png" alt="dev-image" />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- section testimonials -->
+      <section class=" container testimonial__container">
+        
+          <!-- testimonial header -->
+          <div class="testimonial__header">
+            <span class="badge testimonial-badge">Testimonials</span>
+            <h3 class="testimonial__title text-xl">
+              See how customers <strong>drive impact</strong>
+            </h3>
+           
+              <button class="btn btn--secondary testimonial__btn">See case studies</button>
+          
+          </div>
+          <!-- tesimonial image -->
+          <div class="testimonial__content">
+            <div class="testimonial__image">
+              <img
+                src="image/testimonials-photo.png"
+                alt="photo"
+                class="testimonial__image--1"
+              />
+              
+                <img
+                  src="image/testimonials-photo1.svg"
+                  alt="background"
+                  class="blue--bg"
+                />
+
+                <img
+                  src="image/testimonials-photo2.svg"
+                  alt="paly_button"
+                  class="play--button"
+                />
+             
+            </div>
+            <!-- testimonial paypal -->
+            <div class="testimonial__paypal">
+              <img src="image/paypal.png" alt="paypal" class="paypal" />
+
+              <p class="paypal__text text-md">
+                "I used to have a bunch of different tools I had to pay for,
+                with Circle you get everything in one bundle."
+              </p>
+              <div class="paypal__subtext text-sm">
+                <p class="paypal__name"><strong>Michel Dedrick</strong></p>
+              
+              <p class="paypal__role text-sm">Senior Conversion Optimizer</p>
+            </div>
+          </div>
+        
+      
+      </section>
+<hr class="horizonatal--braek">      
+
+      
+    
+      <!--section solution-->
+      <section class="container solution__container">
+        
+          <!-- solution header -->
+          <div class="solution__header">
+            <h3 class="solution__title text-xl">
+              Looking for a <strong>solution</strong> <br />for your business?
+            </h3>
+            <p class="text-md solution__text">
+              Check out Sogolytics enterprise feedback and experience management
+              platform.
+            </p>
+            <div class="solution__btn">
+              <button class=" btn btn--secondary">Learn more</button>
+              <button class="btn btn--schedule">Schedule a consultation</button>
+            </div>
+          </div>
+          <!-- solution image  -->
+          <div class="solution__image">
+            <img src="image/solution-image.png" alt="solution-image " />
+          </div>
+      
+       
+      </section>
+      <!-- horizontal breack -->
+     <hr class="horizonatal--braek">  
+      <!-- resources section -->
+      <section class="resource__container full_container">
+       
+          <!-- resources header  -->
+          <div class="resource__header">
+            <span class="resource__badge badge">Resources</span>
+
+            <h3 class="text-xl resource__title">
+              <strong>Stay</strong> in the <strong>Know</strong>
+            </h3>
+          </div>
+          <!-- resources card  -->
+          <div class="resource__content">
+            <!-- card 1 -->
+            <div class="card">
+              <img src="image/re-image1.png" alt="card_image" class="card__image" />
+
+              <h4 class="card__title">
+                Excepteur sint occaecat cupidatat non proident
+              </h4>
+              <p class="text-sm card__text card__text--1">
+                Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit
+                aut fugit,sed quia consequuntur magni dolores eos
+              </p>
+              <p class="text-sm card__text card__text--2">
+                Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet,
+                consectetur, adipisci veli
+              </p>
+              <button class="btn btn--secondary card__btn--primary">Read more</button>
+            </div>
+            <!-- card 2 -->
+            <div class="card">
+              <img src="image/re-image2.png" alt="card_image" class="card__image" />
+
+              <h4 class="card__title">
+                Quis nostrum exercitationem ullam corporis suscipit laboriosam
+              </h4>
+              <p class="text-sm card__text card__text--1">
+                Ut enim ad minima veniam, quis nostrum exercitationem ullam
+                corporis suscipit laboriosam.
+              </p>
+              <p class="text-sm card__text card__text--2">
+                nisi ut aliquid ex ea commodi consequatur autem vel eum iure
+                reprehenderit
+              </p>
+              <button class=" btn btn--secondary card__btn--secondary">Read more</button>
+            </div>
+            <!-- card 3 -->
+            <div class="card">
+              <img src="image/re-image3.png" alt="card_image" class="card__image" />
+
+              <h4 class="card__title">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+              </h4>
+              <p class="text-sm  card__text card__text--1">
+                Coluptatem accusantium doloremque laudantium, totam rem aperiam
+              </p>
+              <p class="text-sm card__text card__text--2">
+                Aaque ipsa quae ab illo inventore veritatis et quasi architecto
+                beatae vitae dicta sunt explicabo.
+              </p>
+              <button class="btn btn--secondary card__btn--secondary">Read more</button>
+            </div>
+          </div>
+       
+      </section>
+      <!-- section background color for resources -->
+      <section class="cardbg__color">
+        <div class="bg__color"></div>
+      </section>
+
+    </main>
+    
+      <!-- footer -->
+    <footer class="footer__container full_container">
+        
+          <!-- footer top part -->
+          <div class="footer__box">
+            <div class="footer__top">
+              <div class="footer__image">
+                <img src="image/fo-imgae.png" alt="map_image" />
+                <p class="footer__image--title text-xs">
+                  Made with lots of ❤️ in San Francisco
+                </p>
+              </div>
+              <div class="footer__nav">
+                <div class="footer__links">
+                  <div class="footer__link--product footer__link">
+                    <h3 class="footer__link--title">Products</h3>
+                    <ul class="footer__list text-sm">
+                      <li><a href="#">Delta</a></li>
+                      <li><a href="#">Sigma</a></li>
+                      <li><a href="#">Zeta</a></li>
+                      <li><a href="#">Alpha</a></li>
+                      <li><a href="#">Acumen</a></li>
+                    </ul>
+                  </div>
+                  <div class="footer__resource footer__link">
+                    <h3 class="footer__link--title">Resources</h3>
+                    <ul class="footer__list text-sm">
+                      <li class=""><a href="#">Help</a></li>
+                      <li><a href="#"> Training </a></li>
+                      <li><a href="#">Videos</a></li>
+                      <li><a href="#"> Webinars </a></li>
+                      <li><a href="#"> Request a Demo </a></li>
+                      <li><a href="#">Create Surveys </a></li>
+                      <li><a href="#"> Quiz Maker</a></li>
+                    </ul>
+                  </div>
+                  <div class="footer__link--company footer__link">
+                    <h3 class="footer__link--title">Company</h3>
+                    <ul class="footer__list text-sm">
+                      <li><a href="#">About Us</a></li>
+                      <li><a href="#">Careers</a></li>
+                      <li><a href="#">Team</a></li>
+                      <li><a href="#">Contact Us</a></li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+           <!-- footer bottom part -->
+            <div class="footer__bottom">
+              <div class="footer__horizontal--break"><hr class="horizontal" /></div>
+              <div class="footer__contact text-xs">
+                <div class="footer__copyright">
+                  <p class="text-xs">
+                    Copyright 2022 Circle. All rights reserved.
+                  </p>
+                </div>
+                <div class="footer__social">
+                  <img src="image/linkedin.png" alt="linkdin_image" />
+                  <img src="image/twitter.png" alt="twitter_image" />
+                </div>
+                <div class="footer__terms text-xs">
+                  <a href="#">Privacy Policy </a> <span>|</span>
+                  <a href="#"> Data & Security </a> <span>|</span>
+                  <a href="#">Terms of Service </a> <span>|</span>
+                  <a href="#"> Data & Security</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        
+      </footer>
+       <script src="nav.js"></script>
+  <script src="footer.js"></script>
+  </body>
+ 
+</html>
