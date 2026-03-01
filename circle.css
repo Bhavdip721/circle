@@ -886,9 +886,7 @@ span {
   .text-md {
     font-size: 14px;
   }
-  .text-xs {
-    font-size: 10px;
-  }
+
   .btn--primary {
     padding: 8px;
     font-size: 14px;
@@ -1053,12 +1051,6 @@ span {
 @media (max-width: 457px) {
   /* common section */
 
-  .text-xl {
-    font-size: 18px;
-  }
-  .text-md {
-    font-size: 12px;
-  }
   .btn--primary {
     font-weight: 500;
     display: block;
