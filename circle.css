@@ -178,7 +178,7 @@ body {
 .hero {
   background:
     linear-gradient(rgba(193, 240, 243, 0.6), rgba(177, 241, 246, 0.6)),
-    url(./image/hero-background.png);
+    url(./image/hero-background.webp);
 }
 
 .hero__container {
