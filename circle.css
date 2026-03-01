@@ -1,3 +1,8 @@
+:root {
+  --color-primary: #087b84;
+  --color-secoudary: #edfeff;
+  --color-hover: #01555b;
+}
 * {
   margin: 0;
   padding: 0;
@@ -31,13 +36,13 @@ body {
 .btn {
   display: inline-block;
   border-radius: 2px;
-  border: 2px solid #087b84;
+  border: 1px solid var(--color-primary);
 }
 .btn--primary {
   display: inline-block;
 
   padding: 14px 20px;
-  background-color: #087b84;
+  background-color: var(--color-primary);
 
   color: #ffffff;
   font-weight: 700;
@@ -46,14 +51,14 @@ body {
   font-size: 16px;
 }
 .btn--primary:hover {
-  background-color: #099aa3;
+  background-color: var(--color-hover);
   transition: 1s;
 }
 .btn--secondary {
   display: inline-block;
 
   padding: 10px 20px;
-  background-color: #087b84;
+  background-color: var(--color-primary);
   color: #ffffff;
   font-weight: 700;
 
@@ -61,15 +66,18 @@ body {
   font-size: 14px;
 }
 .btn--secondary:hover {
-  background-color: #099aa3;
+  background-color: var(--color-hover);
   transition: 1s;
 }
-.horizonatal--braek {
+.horizontal--braek {
   background-color: #ffffff;
   opacity: 10%;
   max-width: 944px;
   width: 70%;
   margin: 100px auto;
+}
+.first--braek {
+  margin-bottom: 50px;
 }
 /* header */
 .header {
@@ -153,8 +161,8 @@ body {
 /* color not in ratio */
 .header__btn {
   padding: 10px 50px;
-  border: 1px solid #0cbbc7;
-  color: #087b84;
+  border: 1px solid var(--color-primary);
+  color: var(--color-primary);
   background-color: white;
   font-size: 14px;
 }
@@ -164,13 +172,13 @@ body {
   transition: 1s;
 }
 .header__link:hover {
-  color: #0cbbc7;
+  color: var(--color-primary);
 }
 /* hero */
 .hero {
   background:
     linear-gradient(rgba(193, 240, 243, 0.6), rgba(177, 241, 246, 0.6)),
-    url(image/hero-background.png);
+    url(./image/hero-background.png);
 }
 
 .hero__container {
@@ -214,7 +222,7 @@ body {
 .hero__image img {
   position: absolute;
   max-width: 940px;
-  width: 70%;
+  width: 80%;
   top: 30%;
   left: 50%;
   transform: translateX(-50%);
@@ -237,7 +245,7 @@ body {
 }
 .badge {
   background-color: #effeff;
-  color: #087b84;
+  color: var(--color-primary);
   display: inline-block;
   padding: 6px 10px;
   border-radius: 50px;
@@ -272,7 +280,7 @@ body {
   width: auto;
 }
 .customer__record span {
-  color: #087b84;
+  color: var(--color-primary);
 }
 
 /* promise- container  */
@@ -295,11 +303,11 @@ body {
   /* width: 446px; */
 }
 .promise__title {
-  margin-top: 20px;
+  margin-top: 10px;
 }
 
 .promise__text {
-  margin-top: 15px;
+  margin-top: 20px;
   line-height: 26px;
   color: #676767;
   width: 365px;
@@ -322,6 +330,10 @@ body {
   margin-top: 50px;
 }
 /* award */
+.award__container {
+  max-width: 903px;
+  margin: 0 auto;
+}
 .award__header {
   text-align: center;
 }
@@ -332,10 +344,10 @@ body {
 .award__list {
   display: grid;
   grid-template-columns: repeat(3, minmax(220px, 1fr));
-  gap: 20px;
+  column-gap: 60px;
   row-gap: 50px;
+
   margin-top: 60px;
-  justify-items: center;
 }
 
 .award__item {
@@ -346,6 +358,7 @@ body {
   padding: 20px;
   gap: 10px;
   width: 260px;
+  border-radius: 4p;
 }
 .award__item img {
   height: 100px;
@@ -389,7 +402,7 @@ body {
   margin-top: 10px;
 }
 .development__container {
-  background-color: #edfeff;
+  background-color: var(--color-secoudary);
 }
 
 .development__tabs {
@@ -412,7 +425,7 @@ body {
 }
 
 .development__tab--active span {
-  color: #087b84;
+  color: var(--color-primary);
 }
 
 .development__content {
@@ -429,19 +442,18 @@ body {
 .development__image,
 .development__details {
   flex: 1;
+  height: 287px;
 }
 /* Image side */
-
 .development__image {
-  display: flex;
-  flex-direction: row;
-  justify-content: end;
+  overflow-y: hidden;
 }
 .development__image img {
-  width: 90%;
-  height: auto;
-
-  border-radius: 10px;
+  width: 462px;
+  height: 100%;
+  border-radius: 4px;
+  object-fit: cover;
+  object-position: center;
 }
 
 .development__details {
@@ -511,7 +523,7 @@ body {
 }
 
 .testimonial__paypal {
-  background-color: #edfeff;
+  background-color: var(--color-secoudary);
   display: inline-block;
   padding: 20px 42px 20px 20px;
   width: 358px;
@@ -575,7 +587,7 @@ body {
 }
 .btn--schedule {
   padding: 10px 20px;
-  color: #087b84;
+  color: var(--color-primary);
   background-color: white;
   font-size: 14px;
   font-weight: 700;
@@ -613,26 +625,36 @@ body {
 }
 .card__image {
   width: 290px;
+  height: 150px;
+  overflow: hidden;
+}
+.card__image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
 }
 .card__text,
 .card__title {
-  width: 280px;
+  width: 290px;
 }
 .card__title {
   margin-top: 30px;
 }
 .card__btn--primary {
-  margin-top: 44px;
+  margin-top: 25px;
 }
 .card__btn--secondary {
-  margin-top: 80px;
+  margin-top: 47px;
 }
 
 .card__text--1 {
   margin-top: 11px;
+  line-height: 22px;
 }
 .card__text--2 {
   margin-top: 25px;
+  line-height: 22px;
 }
 .resource__card {
   /* better than 33.33% */
@@ -644,10 +666,9 @@ body {
   box-shadow: 0px 10px 10px 0px #00000008;
 }
 .bg__color {
-  height: 400px;
-  background-color: #edfeff;
-  margin: -350px auto 0px;
-  max-width: 1440px;
+  height: 450px;
+  background-color: var(--color-secoudary);
+  margin-top: -350px;
 
   /* width: 100vw; */
 }
@@ -760,6 +781,10 @@ span {
     padding-left: 20px;
     padding-right: 20px;
   }
+  .award__container {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
   /* header */
   .header__link {
     display: none;
@@ -799,6 +824,10 @@ span {
     width: 100%;
     height: auto;
     object-fit: cover;
+  }
+  /* award */
+  .award__item {
+    width: 100%;
   }
   /* development  */
   .development__text {
@@ -864,7 +893,7 @@ span {
     font-size: 12px;
   }
   /* horizontal braek */
-  .horizonatal--braek {
+  .horizontal--braek {
     margin-top: 50px;
     margin-bottom: 50px;
   }
@@ -933,8 +962,8 @@ span {
   .card {
     width: 370px;
   }
-  .card img {
-    width: 80%;
+  .card__image {
+    width: 100%;
   }
   .card__text,
   .card__title {
@@ -968,9 +997,7 @@ span {
     top: 60%;
     left: 28%;
   }
-  .footer__bottom {
-    padding-top: 50px;
-  }
+
   .text-xs {
     font-size: 10px;
   }
@@ -1009,7 +1036,7 @@ span {
   }
 
   .testimonial__paypal {
-    background-color: #edfeff;
+    background-color: var(--color-secoudary);
     display: inline-block;
     padding: 20px 42px 20px 20px;
     width: 358px;
@@ -1033,6 +1060,9 @@ span {
     padding: 5px 5px;
     font-size: 12px;
     font-weight: 500;
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
   }
   .hero__btn {
     padding: 7px;
@@ -1044,6 +1074,9 @@ span {
     padding: 5px 5px;
     font-size: 10px;
     font-weight: 500;
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
   }
   .hr_break {
     padding-top: 20px;
@@ -1076,7 +1109,7 @@ span {
     font-size: 24px;
   }
   .right--arrow {
-    width: 8px;
+    width: 10px;
     height: auto;
   }
 
@@ -1116,7 +1149,7 @@ span {
   /* award */
   .award__list {
     grid-template-columns: repeat(1, 100%);
-    justify-items: center;
+
     margin-top: 20px;
   }
   .award__item {
@@ -1145,9 +1178,11 @@ span {
     margin-top: 20px;
     margin-bottom: 20px;
   }
+  .development__image {
+    text-align: center;
+  }
   .development__image img {
     width: 70%;
-    margin: 0 auto;
   }
   .development__btn {
     margin-top: 15px;
@@ -1164,20 +1199,20 @@ span {
   }
   .testimonial__image--1 {
     width: 100%;
-    object-fit: fill;
+    object-fit: contain;
     /* height: 100%; */
   }
   .blue--bg {
     width: 30px;
 
     top: 48%;
-    left: 50%;
+    left: 47%;
   }
 
   .play--button {
     width: 10px;
     top: 51%;
-    left: 53%;
+    left: 50%;
   }
   .testimonial__paypal {
     padding: 10px;
@@ -1215,6 +1250,11 @@ span {
   }
   .solution__btn {
     margin-top: 20px;
+    justify-content: center;
+  }
+  .btn--learn_more {
+    margin-left: 0px;
+    margin-right: 0px;
   }
 
   /* resource */
@@ -1229,9 +1269,7 @@ span {
 
     width: 100%;
   }
-  .card__image {
-    width: 250px;
-  }
+
   .card__title,
   .card__text {
     width: 100%;
@@ -1255,16 +1293,21 @@ span {
   .footer__image img {
     /* height: 100%; */
     width: 100px;
+    left: 35%;
   }
   .footer__image p {
     font-size: 8px;
     top: 25px;
-    left: 50px;
+    left: 28%;
   }
 
   .footer__contact {
     gap: 10px;
     flex-direction: column;
+  }
+  .footer__contact--2 {
+    flex-direction: column;
+    gap: 10px;
   }
   .footer__terms {
     flex-direction: column;
@@ -1285,6 +1328,9 @@ span {
   }
   .footer__links {
     align-items: center;
+    margin-top: 20px;
+  }
+  .footer__horizontal--break {
     margin-top: 20px;
   }
 }
