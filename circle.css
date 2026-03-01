@@ -2,6 +2,7 @@
   --color-primary: #087b84;
   --color-secoudary: #edfeff;
   --color-hover: #01555b;
+  --color-lightGray: #7c7c7c;
 }
 * {
   margin: 0;
@@ -44,7 +45,7 @@ body {
   padding: 14px 20px;
   background-color: var(--color-primary);
 
-  color: #ffffff;
+  color: white;
   font-weight: 700;
   letter-spacing: 1%;
   /* text-decoration: none; */
@@ -59,7 +60,7 @@ body {
 
   padding: 10px 20px;
   background-color: var(--color-primary);
-  color: #ffffff;
+  color: white;
   font-weight: 700;
 
   /* text-decoration: none; */
@@ -167,7 +168,7 @@ body {
   font-size: 14px;
 }
 .header__btn:hover {
-  background-color: #099aa3;
+  background-color: var(--color-hover);
   color: white;
   transition: 1s;
 }
@@ -206,13 +207,17 @@ body {
 .hero__btn {
   margin-top: 30px;
   display: inline-flex;
-  align-items: center; /* vertical center */
-  justify-content: center; /* horizontal center (if needed) */
-  gap: 8px;
+  align-items: center;
+
+  gap: 10px;
+}
+.hero__btn span {
+  color: white;
 }
 .right--arrow {
-  width: 10px;
+  width: 11px;
   height: auto;
+  padding-bottom: 2px;
 }
 .hero__image {
   align-self: stretch;
@@ -512,15 +517,17 @@ body {
 .blue--bg {
   width: 70px;
   position: absolute;
-  top: 43%;
-  left: 41%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 
 .play--button {
   width: 25px;
   position: absolute;
-  top: 49%;
-  left: 49%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 
 .testimonial__paypal {
@@ -675,7 +682,7 @@ body {
 }
 /* footer */
 footer {
-  background-color: #000000;
+  background-color: black;
 }
 .footer__box {
   padding: 50px 0px 0px;
@@ -699,14 +706,16 @@ footer {
 }
 .footer__image img {
   position: absolute;
-  top: 35%;
-  left: 30%;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
 }
 .footer__image p {
   position: absolute;
-  color: #ecffff;
-  top: 45%;
-  left: 25%;
+  color: white;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 .footer__links {
   display: flex;
@@ -720,7 +729,7 @@ footer {
   font-size: 18px;
 }
 .footer__list a {
-  color: #7c7c7c;
+  color: var(--color-lightGray);
   text-decoration: none;
 }
 .footer__list a:hover {
@@ -741,7 +750,7 @@ footer {
   align-items: center;
 }
 .footer__horizontal--break {
-  color: #ffffff;
+  color: white;
   opacity: 10%;
   margin: 40px auto;
   max-width: 1140px;
@@ -754,7 +763,7 @@ footer {
   flex-wrap: wrap;
 }
 .footer__copyright p {
-  color: #7c7c7c;
+  color: var(--color-lightGray);
 }
 .footer__social {
   display: flex;
@@ -770,7 +779,7 @@ footer {
 .footer__terms a,
 span {
   text-decoration: none;
-  color: #7c7c7c;
+  color: var(--color-lightGray);
 }
 .footer__terms a:hover {
   color: white;
@@ -883,7 +892,7 @@ span {
   .btn--primary {
     padding: 8px;
     font-size: 14px;
-    font-weight: 500;
+    font-weight: 700;
   }
   .btn--secondary {
     padding: 6px;
@@ -909,6 +918,13 @@ span {
   }
   .hero__image img {
     bottom: -135%;
+  }
+  .hero__btn {
+    display: inline-flex;
+    gap: 5px;
+  }
+  .right--arrow {
+    width: 8px;
   }
   /* customer */
   .customer__container {
@@ -992,12 +1008,6 @@ span {
   .footer__link--title {
     font-size: 14px;
   }
-  .footer__image p {
-    position: absolute;
-    color: #ecffff;
-    top: 60%;
-    left: 28%;
-  }
 
   .text-xs {
     font-size: 10px;
@@ -1024,16 +1034,10 @@ span {
 
   .blue--bg {
     width: 45px;
-
-    top: 44%;
-    left: 44%;
   }
 
   .play--button {
     width: 15px;
-
-    top: 48%;
-    left: 48%;
   }
 
   .testimonial__paypal {
@@ -1048,9 +1052,7 @@ span {
 /* media for mobile */
 @media (max-width: 457px) {
   /* common section */
-  .text-sm {
-    font-size: 10px;
-  }
+
   .text-xl {
     font-size: 18px;
   }
@@ -1058,22 +1060,18 @@ span {
     font-size: 12px;
   }
   .btn--primary {
-    padding: 5px 5px;
-    font-size: 12px;
     font-weight: 500;
     display: block;
     margin-right: auto;
     margin-left: auto;
   }
   .hero__btn {
-    padding: 7px;
-    font-size: 14px;
+    display: inline-flex;
     font-weight: 700;
-    gap: 2px;
+    align-items: center;
   }
+
   .btn--secondary {
-    padding: 5px 5px;
-    font-size: 10px;
     font-weight: 500;
     display: block;
     margin-right: auto;
@@ -1205,15 +1203,10 @@ span {
   }
   .blue--bg {
     width: 30px;
-
-    top: 48%;
-    left: 47%;
   }
 
   .play--button {
     width: 10px;
-    top: 51%;
-    left: 50%;
   }
   .testimonial__paypal {
     padding: 10px;
@@ -1245,8 +1238,6 @@ span {
     margin: 0 auto;
   }
   .btn--schedule {
-    padding: 5px;
-    font-size: 10px;
     font-weight: 500;
   }
   .solution__btn {
@@ -1289,17 +1280,14 @@ span {
 
   .footer__top {
     flex-direction: column;
-    gap: 100px;
+    gap: 30px;
   }
   .footer__image img {
     /* height: 100%; */
     width: 100px;
-    left: 35%;
   }
   .footer__image p {
     font-size: 8px;
-    top: 25px;
-    left: 28%;
   }
 
   .footer__contact {
@@ -1320,9 +1308,7 @@ span {
   .footer__social img {
     width: 15px;
   }
-  .footer__bottom {
-    padding-top: 20px;
-  }
+
   .footer__contact {
     flex-direction: column;
     align-items: center;
