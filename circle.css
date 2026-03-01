@@ -1304,9 +1304,6 @@ span {
   .footer__terms span {
     display: none;
   }
-  .footer__social img {
-    width: 15px;
-  }
 
   .footer__contact {
     flex-direction: column;
