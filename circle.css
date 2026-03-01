@@ -1075,9 +1075,8 @@ span {
   .btn--secondary {
     font-weight: 500;
     display: block;
-    margin-right: auto;
-    margin-left: auto;
   }
+
   .hr_break {
     padding-top: 20px;
     padding-bottom: 20px;
@@ -1214,7 +1213,7 @@ span {
     width: auto;
   }
   .testimonial__btn {
-    margin-top: 15px;
+    margin: 20px auto 0px;
   }
   .testimonial__header {
     align-self: flex-start;
@@ -1243,7 +1242,6 @@ span {
   }
   .solution__btn {
     margin-top: 20px;
-    justify-content: center;
   }
   .btn--learn_more {
     margin-left: 0px;
