@@ -446,7 +446,7 @@ body {
 }
 /* Image side */
 .development__image {
-  overflow-y: hidden;
+  overflow: hidden;
 }
 .development__image img {
   width: 462px;
