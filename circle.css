@@ -1007,10 +1007,6 @@ span {
     font-size: 14px;
   }
 
-  .text-xs {
-    font-size: 10px;
-  }
-
   .footer__box {
     padding-left: 20px;
     padding-right: 20px;
@@ -1283,16 +1279,16 @@ span {
   }
 
   .footer__contact {
-    gap: 10px;
+    gap: 20px;
     flex-direction: column;
   }
   .footer__contact--2 {
     flex-direction: column;
-    gap: 10px;
+    gap: 20px;
   }
   .footer__terms {
     flex-direction: column;
-    gap: 10px;
+    gap: 20px;
   }
   .footer__terms span {
     display: none;
