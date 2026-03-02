@@ -1138,7 +1138,7 @@ span {
     width: 100%;
   }
   .promise__image--img {
-    width: 70%;
+    width: 90%;
     margin: 0 auto;
   }
   .promise__container {
@@ -1181,7 +1181,7 @@ span {
     text-align: center;
   }
   .development__image img {
-    width: 70%;
+    width: 90%;
   }
   .development__btn {
     margin-top: 15px;
@@ -1213,7 +1213,7 @@ span {
     width: auto;
   }
   .testimonial__btn {
-    margin: 20px auto 0px;
+    margin-top: 15px;
   }
   .testimonial__header {
     align-self: flex-start;
@@ -1234,7 +1234,7 @@ span {
   }
 
   .solution__image img {
-    width: 70%;
+    width: 90%;
     margin: 0 auto;
   }
   .btn--schedule {
