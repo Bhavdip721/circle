@@ -972,6 +972,9 @@ span {
     align-self: flex-start;
     width: 100%;
   }
+  .testimonial__btn {
+    margin-top: 15px;
+  }
   .testimonial__paypal {
     left: 80%;
   }
@@ -1224,9 +1227,6 @@ span {
   .testimonial__paypal {
     padding: 10px;
     width: auto;
-  }
-  .testimonial__btn {
-    margin-top: 15px;
   }
 
   .paypal__text {
