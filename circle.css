@@ -108,7 +108,7 @@ body {
 .header__menu {
   position: absolute;
   top: 20px;
-  left: 4%;
+  left: 20px;
   color: #000000;
   cursor: pointer;
   font-size: 25px;
@@ -796,6 +796,9 @@ span {
     padding-right: 20px;
   }
   /* header */
+  .header__container {
+    padding: 21px 20px;
+  }
   .header__link {
     display: none;
   }
@@ -809,6 +812,7 @@ span {
   .header__sidenav a {
     font-size: 14px;
   }
+
   .hero__image img {
     top: 50%;
   }
@@ -964,6 +968,10 @@ span {
     gap: 20px;
     align-items: flex-start;
   }
+  .testimonial__header {
+    align-self: flex-start;
+    width: 100%;
+  }
   .testimonial__paypal {
     left: 80%;
   }
@@ -1017,9 +1025,14 @@ span {
     padding-left: 20px;
     padding-right: 20px;
   }
+  .footer__contact {
+    flex-direction: column;
+  }
 
   .footer__contact--2 {
-    gap: 50px;
+    gap: 20px;
+    flex-direction: column;
+    align-items: center;
   }
   .footer__image--title {
     font-size: 10px;
@@ -1215,10 +1228,7 @@ span {
   .testimonial__btn {
     margin-top: 15px;
   }
-  .testimonial__header {
-    align-self: flex-start;
-    width: 100%;
-  }
+
   .paypal__text {
     line-height: 26px;
     width: 100%;
@@ -1289,14 +1299,6 @@ span {
     font-size: 8px;
   }
 
-  .footer__contact {
-    gap: 20px;
-    flex-direction: column;
-  }
-  .footer__contact--2 {
-    flex-direction: column;
-    gap: 20px;
-  }
   .footer__terms {
     flex-direction: column;
     gap: 20px;
